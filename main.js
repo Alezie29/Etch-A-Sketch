@@ -13,3 +13,9 @@ cells.forEach(cell => {
     cell.style.height = `${100 / gridSize}%`;
 });
 
+const hover = document.querySelectorAll('.cell');
+cells.forEach(cell => {
+    cell.addEventListener('mouseenter', () => {
+        cell.style.backgroundColor = 'Black';
+    });
+});
